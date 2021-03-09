@@ -6,7 +6,7 @@ from .models import Doctor, Patient, Appointment
 
 # view for doctor
 class DoctorViewSet(viewsets.ModelViewSet):
-    queryset = Doctor.objects.all().order_by('name')
+    queryset = Doctor.objects.all()
     serializer_class = DoctorSerializer
 
 # view for Patient

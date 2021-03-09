@@ -25,8 +25,8 @@ class Patient(models.Model):
 # appointment model
 class Appointment (models.Model):
     doctor_id = models.ForeignKey(
-        Doctor, null=True, blank=True, on_delete=models.CASCADE)
+        Doctor, on_delete=models.CASCADE)
     patient_id = models.ForeignKey(
-        Patient, null=True, blank=True, on_delete=models.CASCADE)
+        Patient,  on_delete=models.CASCADE)
     date = models.DateField(blank=True, null=True)
     time = models.CharField(max_length=50)

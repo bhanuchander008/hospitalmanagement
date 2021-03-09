@@ -6,15 +6,14 @@ router = routers.DefaultRouter()
 
 # routing for doctor
 router.register(r'doctor', views.DoctorViewSet)
-router.register(r'doctor/<int:pk>/', views.DoctorViewSet)
 
 #routing for patient
 router.register(r'patient', views.PatientViewSet)
-router.register(r'patient/<int:pk>/', views.PatientViewSet)
+
 
 # routing for appointment
 router.register(r'appointment', views.AppointmentViewSet)
-router.register(r'appointment/<int:pk>/', views.AppointmentViewSet)
+
 
 
 
